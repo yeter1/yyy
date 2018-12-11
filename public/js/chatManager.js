@@ -368,7 +368,7 @@ function isAlphaNumeric(str) {
     });
 
     socket.on("hunter", function(){
-	    if(myRole==2){
+	    if(myRole==3){
 		$stDialogue.prepend('<p> Select who you would like to kill </p>');
 		$nightPrompt.show();
 		let nightFormAdd = '';
