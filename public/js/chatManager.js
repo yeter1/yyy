@@ -173,11 +173,11 @@ function isAlphaNumeric(str) {
             wordRole = "Seer";
             //roleDescrip = "Each night, point at a player and learn if they are a werewolf";
           }
-          if(myRole==2){
+          if(myRole==3){
             wordRole = "Hunter";
            // roleDescrip = "If you are killed, take someone down with you";
           }
-          if(myRole==3){
+          if(myRole==2){
             wordRole = "Villager";
            // roleDescrip = "The default role, with no special abilites, you must try and discover the werewolves before it is too late!";
           }
