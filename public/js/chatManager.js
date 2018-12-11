@@ -277,7 +277,8 @@ function isAlphaNumeric(str) {
                //2 is hunter, doesnt have special effect at night, should mimic villager
                //3 is villager, but no need to check, only option left
                else {
-                    $stDialogue.prepend('<p class="nightTime">Bos Oy Vermen Lazim Koylu</p>');
+                    $stDialogue.prepend('<p class="nightTime">It is night time, the villagers are sleeping</p>');
+         
         let nightFormAdd = '';
 
                     for(i=0; i<serverPlayerList.length; i++){
@@ -286,6 +287,10 @@ function isAlphaNumeric(str) {
                     }
                     nightFormAdd+= '<input id="nightFormButton" type="button" value="Vote"/></form>';
                     $nightForm.append(nightFormAdd);
+
+               }
+
+		    //socket.emit("night ready");
                }
           }
           else{ 
@@ -345,7 +350,7 @@ function isAlphaNumeric(str) {
 		$nightForm.html("");
 		$stDialogue.prepend(seerResponse);
 	    }
-	    else if(myRole==2){
+	    else if(myRole==3){
 		socket.emit("hunter res", nightVote);
 		$nightForm.html("");
 	    }
