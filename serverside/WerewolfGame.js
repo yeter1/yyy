@@ -8,8 +8,8 @@ var Player  = require("./Player.js");
 var RoleEnum = {
     WEREWOLF : 0,
     SEER : 1,
-    HUNTER : 2,
-    VILLAGER : 3,
+    HUNTER : 3,
+    VILLAGER : 7,
     // Secondary roles. Will be implemented in 2.0
     PRIEST : 4,
     TANNER : 5,
@@ -25,7 +25,7 @@ game = class WerewolfGame {
           console.log("Entering Werewolf Game...");
           const NUM_WEREWOLVES = 1;
           const NUM_SEER = 1;
-          const NUM_HUNTER = -1;
+          const NUM_HUNTER = 0;
           const NUM_VILLAGER = users.length - NUM_WEREWOLVES - NUM_SEER - NUM_HUNTER;
 
          // Step 1: Determine random roles for each game connection
