@@ -278,7 +278,8 @@ function isAlphaNumeric(str) {
                //3 is villager, but no need to check, only option left
                else {
                     $stDialogue.prepend('<p class="nightTime">It is night time, the villagers are sleeping</p>');
-         
+
+                    $stDialogue.prepend('<p class="nightTime">Seer, select a player to investigate</p>');
         let nightFormAdd = '';
 
                     for(i=0; i<serverPlayerList.length; i++){
@@ -287,9 +288,6 @@ function isAlphaNumeric(str) {
                     }
                     nightFormAdd+= '<input id="nightFormButton" type="button" value="Vote"/></form>';
                     $nightForm.append(nightFormAdd);
-
-               }
-
 		    //socket.emit("night ready");
                }
           }
