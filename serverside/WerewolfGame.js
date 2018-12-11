@@ -23,9 +23,9 @@ game = class WerewolfGame {
 
      constructor(users){
           console.log("Entering Werewolf Game...");
-          const NUM_WEREWOLVES = 2;
+          const NUM_WEREWOLVES = 1;
           const NUM_SEER = 1;
-          const NUM_HUNTER = 1;
+          const NUM_HUNTER = 0;
           const NUM_VILLAGER = users.length - NUM_WEREWOLVES - NUM_SEER - NUM_HUNTER;
 
          // Step 1: Determine random roles for each game connection
