@@ -55,7 +55,7 @@ game = class WerewolfGame {
                  // We need to switch to the next state
                  state += 1;
                  if (state == RoleEnum.SEER) { targLength = sele.length - NUM_SEER}
-                 else if (state == RoleEnum.HUNTER) { targLength = sele.length - NUM_HUNTER}
+                 //else if (state == RoleEnum.HUNTER) { targLength = sele.length - NUM_HUNTER}
                  else if (state == RoleEnum.VILLAGER) { targLength = sele.length - NUM_VILLAGER}
                  else {}
               }
