@@ -8,8 +8,8 @@ var Player  = require("./Player.js");
 var RoleEnum = {
     WEREWOLF : 0,
     SEER : 1,
-    HUNTER : 3,
-    VILLAGER : 7,
+    HUNTER : 2,
+    VILLAGER : 3,
     // Secondary roles. Will be implemented in 2.0
     PRIEST : 4,
     TANNER : 5,
