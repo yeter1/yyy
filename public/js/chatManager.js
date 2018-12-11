@@ -277,8 +277,15 @@ function isAlphaNumeric(str) {
                //2 is hunter, doesnt have special effect at night, should mimic villager
                //3 is villager, but no need to check, only option left
                else {
-                    $stDialogue.prepend('<p class="nightTime">It is night time, the villagers are sleeping</p>');
-		    socket.emit("night ready");
+                    $stDialogue.prepend('<p class="nightTime">Bos Oy Vermen Lazim Koylu</p>');
+        let nightFormAdd = '';
+
+                    for(i=0; i<serverPlayerList.length; i++){
+      if(serverPlayerList[i].alive && serverPlayerList[i].name!==myName)
+          nightFormAdd+= '<input type="radio" name="villageList" value="'+ serverPlayerList[i].name +'"/><span>' + serverPlayerList[i].name + '</span><br>';
+                    }
+                    nightFormAdd+= '<input id="nightFormButton" type="button" value="Vote"/></form>';
+                    $nightForm.append(nightFormAdd);
                }
           }
           else{ 
